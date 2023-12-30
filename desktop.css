@@ -47,21 +47,21 @@
 
 .name {
     grid-area: 1 / 2 / 2 / 3;
-    color: var(--White);
+    color: white;
     font-size: .8em;
     font-weight: 600;
 }
 
 .name-black {
     grid-area: 1 / 2 / 2 / 3;
-    color: var(--black);
+    color: black;
     font-size: .8em;
     font-weight: 600;
 }
 
 .verified {
     grid-area: 2 / 2 / 3 / 3;
-    color: var(--White);
+    color: white;
     opacity: 70%;
     font-size: .7em;
     font-weight: 500;
@@ -69,7 +69,7 @@
 
 .verified-black {
     grid-area: 2 / 2 / 3 / 3;
-    color: var(--black);
+    color: black;
     opacity: 70%;
     font-size: .7em;
     font-weight: 500;
@@ -106,9 +106,6 @@
     padding-bottom: .5em;
 }
 
-.testimonial-light{
-    color: v;
-}
 
 /* end classes */
 
@@ -182,7 +179,7 @@ body{
         grid-area: 1 / 3 / 2 / 4;
     }
 
-    card03 {
+    .card03 {
         grid-area: 2 / 1 / 3 / 2;
     }
 
@@ -197,96 +194,4 @@ body{
     .rodape {
         padding-bottom: 0;
     }
-
-
 }
-
-
-/*
-body{
-    font-size: 0.81rem;
-    background-color: var(--bluegray);
-}
-
-.content{
-    display: grid;
-    grid-template-columns: 15.9375rem 15.9375rem 15.9395rem;
-    grid-template-rows: 17.625rem 16.625rem 16.625rem;
-    justify-content: stretch;
-    column-gap: 1.88rem;
-    margin-bottom: 5.5rem;
-}
-
-.first{
-    grid-column: 1/3;
-    width: auto;
-    height: auto;
-    background-color: var(--violet);
-}
-
-.quotion{
-    margin-top: -3.4rem;
-    padding-left: 22.2rem;
-}
-
-.second{
-    grid-column: 3;
-    margin-top: 0;
-    width: auto;
-    height: auto;
-    background-color: var(--gray);
-}
-
-.third{
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: 0;
-    width: auto;
-    height: auto;
-    background-color: white;
-}
-
-.fourth{
-    grid-column: 2/4; 
-    grid-row: 2;
-    margin-top: 0;
-    width: auto;
-    height: auto;
-    background-color: var(--darkgray);
-}
-
-.fifth{
-    grid-column: span 1/4;
-    grid-row: 3;
-    margin-top: 0;
-    width: auto;
-    height: auto;
-    background-color: white;
-
-
-}
-
-
-/*
-    .fifth {
-        
-    }
-
-    .paragraph {
-        padding: 1rem 2rem 2rem 2rem;
-    }
-
-    .paragraph.others.dark {
-        padding: 1.5rem 2rem 1.63rem 2rem;
-    }
-
-    .paragraph.others.dark-blue {
-        padding: 1.5rem 2rem 1.63rem 2rem;
-    }
-
-}
-/*
-
-  
-  
-  
