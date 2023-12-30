@@ -82,7 +82,7 @@
 }
 
 .title-black {
-    color: var(--black);
+    color: black;
     font-size: 1.3em;
     font-weight: 400;
 }
@@ -98,7 +98,7 @@
 }
 
 .testimonial-black {
-    color: var(--black);
+    color: black;
     opacity: 70%;
     font-size: .85em;
     font-weight: 300;
