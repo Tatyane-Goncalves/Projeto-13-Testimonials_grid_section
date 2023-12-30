@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;500;600&display=swap');
+
+
+:root{
+    --bg-color: #edf2f8;
+    --moderateviolet: #7440c7;
+    --dark-grayish-blue: #47556b;
+    --dark-blue: #3d52a3;
+    --dark-blackish-blue: #19212e; 
+    --lightgray: #cfcfcf;
+    --bluegray: #ecf2f8;
+    --ligth-grayish-blue: #edf2f747;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* clases */
+.tw-card{
+    display: grid;
+    gap: 12px;
+    margin: 1.5em;
+    padding: 1.5em 1.8em;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px var(--lightgray);
+}
+
+.cardtop {
+    display: grid;
+    height: 35px;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.tw-pic {
+    grid-area: 1 / 1 / 3 / 2;
+    width: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.316);
+    border-radius: 50%;
+}
+
+.name {
+    grid-area: 1 / 2 / 2 / 3;
+    color: var(--White);
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.name-black {
+    grid-area: 1 / 2 / 2 / 3;
+    color: var(--black);
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.verified {
+    grid-area: 2 / 2 / 3 / 3;
+    color: var(--White);
+    opacity: 70%;
+    font-size: .7em;
+    font-weight: 500;
+}
+
+.verified-black {
+    grid-area: 2 / 2 / 3 / 3;
+    color: var(--black);
+    opacity: 70%;
+    font-size: .7em;
+    font-weight: 500;
+}
+
+.title {
+    color: var(--White);
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.title-black {
+    color: var(--black);
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+
+.testimonial {
+    color: var(--White);
+    opacity: 70%;
+    font-size: .85em;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: .5em;
+}
+
+.testimonial-black {
+    color: var(--black);
+    opacity: 70%;
+    font-size: .85em;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: .5em;
+}
+
+/* end classes */
+
+body{
+    background-color: var(--bg-color);
+}
+
+.container{
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.card01{
+    background: url('images/bg-pattern-quotation.svg') var(--moderateviolet) top right no-repeat;
+    background-position-x: 85%;
+}
+
+.card02{
+    background-color: var(--dark-blackish-blue);
+}
+
+.card03, 
+.card05{
+    background-color: white;
+}
+
+.card04{
+    background-color: black;
+}
+
+.rodape{
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: var(--moderateviolet);
+}
+
+.rodape a:hover{
+    text-decoration: underline;
+    color: var(--dark-blue);
+}
+
+@media screen and (min-width: 1180px){
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        width: 1120px;
+    }
+
+    .tw-card{
+        margin: .8em;
+    }
+
+    .card01 {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .card02 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    card03 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .card04 {
+        grid-area: 2 / 2 / 3 / 4;
+    }
+
+    .card05 {
+        grid-area: 1 / 4 / 3 / 5;
+    }
+
+    .rodape {
+        padding-bottom: 0;
+    }
+
+
+}
+
+
+/*
+body{
+    font-size: 0.81rem;
+    background-color: var(--bluegray);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 15.9375rem 15.9375rem 15.9395rem;
+    grid-template-rows: 17.625rem 16.625rem 16.625rem;
+    justify-content: stretch;
+    column-gap: 1.88rem;
+    margin-bottom: 5.5rem;
+}
+
+.first{
+    grid-column: 1/3;
+    width: auto;
+    height: auto;
+    background-color: var(--violet);
+}
+
+.quotion{
+    margin-top: -3.4rem;
+    padding-left: 22.2rem;
+}
+
+.second{
+    grid-column: 3;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    background-color: var(--gray);
+}
+
+.third{
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    background-color: white;
+}
+
+.fourth{
+    grid-column: 2/4; 
+    grid-row: 2;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    background-color: var(--darkgray);
+}
+
+.fifth{
+    grid-column: span 1/4;
+    grid-row: 3;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    background-color: white;
+
+
+}
+
+
+/*
+    .fifth {
+        
+    }
+
+    .paragraph {
+        padding: 1rem 2rem 2rem 2rem;
+    }
+
+    .paragraph.others.dark {
+        padding: 1.5rem 2rem 1.63rem 2rem;
+    }
+
+    .paragraph.others.dark-blue {
+        padding: 1.5rem 2rem 1.63rem 2rem;
+    }
+
+}
+/*
+
+  
+  
+  
